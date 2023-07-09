@@ -29,7 +29,7 @@
 CREATE DATABASE Human_friends;
 ```
 8. Создать таблицы с иерархией из диаграммы в БД
-```
+```sql
 USE human_friends;
 CREATE TABLE animal_classes
 (
@@ -78,9 +78,8 @@ CREATE TABLE cats
     Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 ```
-
 9. Заполнить низкоуровневые таблицы именами(животных), командами которые они выполняют и датами рождения
-```
+```sql
 INSERT INTO cats (Name, Birthday, Commands, Genus_id)
 VALUES 
 ('Пушок', '2011-01-01', 'кис кис', 1),
@@ -168,7 +167,7 @@ VALUES
 ('Борода', '2022-12-10', "присядь", 3);
 ```
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
-```
+```sql
 SET SQL_SAFE_UPDATES = 0;
 DROP TABLE camels;
 
@@ -176,7 +175,7 @@ SELECT Name, Birthday, Commands FROM horses
 UNION SELECT  Name, Birthday, Commands FROM donkeys;
 ```
 11.Создать новую таблицу “молодые животные” в которую попадут все животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице
-```
+```sql
 CREATE TEMPORARY TABLE animals AS 
 SELECT *, 'Лошади' as genus FROM horses
 UNION SELECT *, 'Ослы' AS genus FROM donkeys
@@ -191,7 +190,7 @@ FROM animals WHERE Birthday BETWEEN ADDDATE(curdate(), INTERVAL -3 YEAR) AND ADD
 SELECT * FROM yang_animal;
 ```
 12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.
-```
+```sql
 SELECT h.Name, h.Birthday, h.Commands, pa.Genus_name, ya.Age_in_month 
 FROM horses h
 LEFT JOIN yang_animal ya ON ya.Name = h.Name
