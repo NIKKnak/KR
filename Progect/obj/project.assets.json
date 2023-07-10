@@ -1,35 +1,35 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nik88\\.nuget\\packages\\": {},
+    "C:\\Users\\NIKnak\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\Progect.csproj",
+      "projectUniqueName": "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\Progect.csproj",
       "projectName": "Progect",
-      "projectPath": "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\Progect.csproj",
-      "packagesPath": "C:\\Users\\nik88\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\obj\\",
+      "projectPath": "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\Progect.csproj",
+      "packagesPath": "C:\\Users\\NIKnak\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nik88\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NIKnak\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -37,8 +37,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -49,8 +49,8 @@
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.4.23260.5\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

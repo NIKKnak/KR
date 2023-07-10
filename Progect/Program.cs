@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+
+public class Animals
+{
+    protected int petId;
+    protected string name;
+    protected  birthday;
+    protected string commands;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+public class Cat 
