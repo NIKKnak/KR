@@ -30,7 +30,7 @@ namespace KR
 
 
 
-        class Animals
+        public abstract class HomeAnimals
         {
             protected int _petId;
             protected string _name;
@@ -38,7 +38,7 @@ namespace KR
             protected string _commands;
 
 
-            public Animals(int petId, string name, string birthday, string commands)
+            public HomeAnimals(int petId, string name, string birthday, string commands)
             {
                 _petId = petId;
                 _name = name;
@@ -60,8 +60,15 @@ namespace KR
 
 
 
-        public class Cat
+        public class Cat : HomeAnimals
         {
+            public Cat (int petId, string name, string birthday, string commands) {
+                super(petId, "asd", "01012020", "мяу");
+            }
+               
+
+
+
 
         }
 
