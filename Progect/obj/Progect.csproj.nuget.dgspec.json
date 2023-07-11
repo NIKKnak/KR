@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\Progect.csproj": {}
+    "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\Progect.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\Progect.csproj": {
+    "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\Progect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\Progect.csproj",
+        "projectUniqueName": "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\Progect.csproj",
         "projectName": "Progect",
-        "projectPath": "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\Progect.csproj",
-        "packagesPath": "C:\\Users\\NIKnak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NIKnak\\Source\\Repos\\KR\\Progect\\obj\\",
+        "projectPath": "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\Progect.csproj",
+        "packagesPath": "C:\\Users\\nik88\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nik88\\Source\\Repos\\KR\\Progect\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\NIKnak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nik88\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.4.23260.5\\RuntimeIdentifierGraph.json"
         }
       }
     }
