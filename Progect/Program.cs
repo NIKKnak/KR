@@ -7,11 +7,11 @@ namespace KR
     {
         static void Main(string[] args)
         {
-           
+            Console.WriteLine();
         }
 
     }
-
+    
 
     class Animals
     {
@@ -36,7 +36,7 @@ namespace KR
         }
 
         
-
+        
 
 
     }
