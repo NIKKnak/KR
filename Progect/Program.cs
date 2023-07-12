@@ -13,17 +13,17 @@ namespace KR
             };
 
 
-            Console.WriteLine(animals.);
+            Console.WriteLine(HomeAnimals);
 
 
 
 
 
         }
-            
 
 
-        
+
+
 
 
 
@@ -62,13 +62,10 @@ namespace KR
 
         public class Cat : HomeAnimals
         {
-            public Cat (int petId, string name, string birthday, string commands) {
-                super(petId, "asd", "01012020", "мяу");
+            public Cat(int petId, string name, string birthday, string commands) : base(petId, name, birthday, commands)
+            {
+                // super(petId, "asd", "01012020", "мяу");
             }
-               
-
-
-
 
         }
 
