@@ -13,18 +13,37 @@ namespace KR
         }
 
 
-
-
-
-
-
-
-
         static void Main(string[] args)
         {
-          
 
-            
+            bool isWork = true;
+
+            ShowAllObjs(_allAnimals);
+
+            while (isWork)
+            {
+                Console.WriteLine("Выберите тип животного");
+                int numAnim = int.Parse(Console.ReadLine());
+                Animals selectedAnimals = _allAnimals[numAnim - 1];
+
+                Console.WriteLine("Введите учетный номер животного");
+                int Id = Console.ReadLine();
+
+                Console.WriteLine("Введите дуту рождения животного в формате гггг/мм/дд");
+                string birthdaySTR = Console.ReadLine();
+                DateTime birthday = GetBirthday(birthdaySTR);
+
+                Console.WriteLine("Введите команды животного");
+                string commands = Console.ReadLine();
+
+
+
+                
+
+
+
+
+            }
 
 
 
@@ -33,6 +52,15 @@ namespace KR
         }
 
 
+        static void ShowAllObjs<T>(IList<T> odjs) // общий метод
+        {
+
+            for (int i = 0; i < odjs.Count; i++)
+            {
+                Console.WriteLine($"{i + 1} {odjs[i]}");
+            }
+
+        }
 
         static DateTime GetBirthday(string animalDateInput)
         {
@@ -98,6 +126,7 @@ namespace KR
             public override string ToString()
             {
                 return _homeAnimals;
+                return _packedAnimals;
             }
 
 
