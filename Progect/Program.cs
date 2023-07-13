@@ -38,7 +38,7 @@ namespace KR
 
 
 
-                
+
 
 
 
@@ -93,21 +93,6 @@ namespace KR
 
         }
 
-        public class Cat : HomeAnimals
-        {
-            public Cat(int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
-            {
-                
-            }
-
-
-            public override string ToString()
-            {
-                return $"{base.ToString()} {Job}";
-            }
-
-        }
-
         class Animals
         {
             public int _homeAnimals { get; private set; }
@@ -132,6 +117,120 @@ namespace KR
 
         }
 
+        public class Cat : HomeAnimals
+        {
+
+            public Animals Animals { get; private set; }
+
+            public Cat(Animals animals, int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
+            {
+                Animals = animals;
+            }
+
+
+            public override string ToString()
+            {
+                return $"{base.ToString()} {Animals}";
+            }
+
+        }
+
+        public class Dog : HomeAnimals
+        {
+
+            public Animals Animals { get; private set; }
+
+            public Dog(Animals animals, int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
+            {
+                Animals = animals;
+            }
+
+
+            public override string ToString()
+            {
+                return $"{base.ToString()} {Animals}";
+            }
+
+        }
+
+        public class Hamster : HomeAnimals
+        {
+
+            public Animals Animals { get; private set; }
+
+            public Hamster(Animals animals, int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
+            {
+                Animals = animals;
+            }
+
+
+            public override string ToString()
+            {
+                return $"{base.ToString()} {Animals}";
+            }
+
+        }
+
+        public class Horse : HomeAnimals
+        {
+
+            public Animals Animals { get; private set; }
+
+            public Horse(Animals animals, int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
+            {
+                Animals = animals;
+            }
+
+
+            public override string ToString()
+            {
+                return $"{base.ToString()} {Animals}";
+            }
+
+        }
+
+        public class Camel : HomeAnimals
+        {
+
+            public Animals Animals { get; private set; }
+
+            public Camel(Animals animals, int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
+            {
+                Animals = animals;
+            }
+
+
+            public override string ToString()
+            {
+                return $"{base.ToString()} {Animals}";
+            }
+
+        }
+
+        public class Donkey : HomeAnimals
+        {
+
+            public Animals Animals { get; private set; }
+
+            public Donkey(Animals animals, int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
+            {
+                Animals = animals;
+            }
+
+
+            public override string ToString()
+            {
+                return $"{base.ToString()} {Animals}";
+            }
+
+        }
+
+
+
+
+
+
+
 
 
 
@@ -144,4 +243,23 @@ namespace KR
 
 
     }
+
+        
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
