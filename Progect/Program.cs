@@ -5,20 +5,11 @@ namespace KR
 
     internal class Program
     {
-        static void Main(string[] args)
+
+        static List<Animals> _allAnimals = new List<Animals>()
         {
-            Animals[] animals =
-            {
-                new Animals(1,"Тузик", "01.01.2010", "сидеть")
-            };
-
-
-            Console.WriteLine(HomeAnimals);
-
-
-
-
-
+            new Animals("Домашнее животное")
+            new Animals("Вьючное животное")
         }
 
 
@@ -29,49 +20,88 @@ namespace KR
 
 
 
+        static void Main(string[] args)
+        {
+          
 
-        public abstract class HomeAnimals
+            
+
+
+
+
+
+        }
+
+
+
+        static DateTime GetBirthday(string animalDateInput)
+        {
+            DateTime date = DateTime.Parse(animalDateInput);
+            return date;
+        }
+
+        abstract class HomeAnimals
         {
             protected int _petId;
             protected string _name;
-            protected string _birthday;
+            protected DateTime _birthday;
             protected string _commands;
 
 
-            public HomeAnimals(int petId, string name, string birthday, string commands)
+            public HomeAnimals(int petId, string name, string commands = "Default", DateTime? birthday = null)
             {
                 _petId = petId;
                 _name = name;
-                _birthday = birthday;
                 _commands = commands;
+                _birthday = birthday ?? DateTime.Now;
             }
 
 
-            public void ShowInfo()
+            public override string ToString()
             {
-                Console.WriteLine($"id питомца - {_petId}, Имя - {_name}, Дата рождения - {_birthday}, Знает комманды - {_commands} ");
+                return $"{_petId} {_name} {_commands} {_birthday.ToShortDateString()}"
             }
 
 
         }
-
-
-
-
-
 
         public class Cat : HomeAnimals
         {
-            public Cat(int petId, string name, string birthday, string commands) : base(petId, name, birthday, commands)
+            public Cat(int petId, string name, string commands = "Default", DateTime? birthday = null) : base(petId, name, commands, birthday)
             {
-                // super(petId, "asd", "01012020", "мяу");
+                
+            }
+
+
+            public override string ToString()
+            {
+                return $"{base.ToString()} {Job}";
             }
 
         }
 
+        class Animals
+        {
+            public int _homeAnimals { get; private set; }
+            public int _packedAnimals { get; private set; }
+
+            public Animals(string packedAnimals)
+            {
+                _packedAnimals = packedAnimals;
+            }
+
+            public Animals(string homeAnimals)
+            {
+                _homeAnimals = homeAnimals;
+            }
+
+            public override string ToString()
+            {
+                return _homeAnimals;
+            }
 
 
-
+        }
 
 
 
@@ -86,15 +116,3 @@ namespace KR
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
