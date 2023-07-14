@@ -216,7 +216,7 @@ LEFT JOIN home_animals ha ON ha.Id = hm.Genus_id;
 ```
 13.Создать [класс с Инкапсуляцией методов и наследованием по диаграмме](https://github.com/NIKKnak/KR/tree/main/System/src/Model).
 
-14. Написать [программу](https://github.com/NIKKnak/KR/tree/main/System/src), имитирующую работу реестра домашних животных.
+14.Написать [программу](https://github.com/NIKKnak/KR/tree/main/System/src), имитирующую работу реестра домашних животных.
 В программе должен быть реализован следующий функционал:
 14.1 Завести новое животное
 14.2 определять животное в правильный класс
